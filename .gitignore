@@ -3,6 +3,9 @@
 /public/build
 /public/hot
 /public/storage
+/public/enviados
+/public/recibidos
+/public/Archivos_abogados
 /storage/*.key
 /vendor
 .env

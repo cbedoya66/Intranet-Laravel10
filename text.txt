@@ -1,0 +1,19 @@
+
+
+
+ <table id="table6" class="table">
+                <thead>
+                    <tr>
+                        <th class="bg-dark">ID</th>
+                        <th class="bg-dark">FECHA</th>
+                        <th class="bg-dark">CEDULA</th>
+                        <th class="bg-dark">NOMBRES</th>
+                        <th class="bg-dark">ABOGADO</th>
+                        <th class="bg-dark">TRAMITE</th>
+                        <th class="bg-dark">OBSERVACIONES</th>
+                        <th class="bg-dark">CORREO</th>
+                        <th class="bg-dark">ACTIVO</th>
+                        <th class="bg-dark">&nbsp;</th>
+                    </tr>
+                </thead>
+            </table>
