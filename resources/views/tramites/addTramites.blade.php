@@ -79,7 +79,9 @@
                                     <i class="fa fa-phone text-lightblue"></i>
                                 </div>
                             </x-slot>
-                        </x-adminlte-input></div>
+                        </x-adminlte-input>
+                    </div>
+
                     <div class="col-3"><x-adminlte-select2 name="strnacionalidad" id="strnacionalidad" label="Nacionalidad"
                             label-class="text-lightblue" igroup-size="lg" data-placeholder="Seleccione la Nacionalidad...">
                             <x-slot name="prependSlot">

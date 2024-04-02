@@ -216,6 +216,7 @@
                         <th class="bg-dark">NACIONALIDAD</th>
                         <th class="bg-dark">POBLACIÓN</th>
                         <th class="bg-dark">OBSERVACIONES</th>
+                        <th class="bg-dark">OBSERVACIONES FILTRO</th>
                         <th class="bg-dark">CORREO</th>
                         <th class="bg-dark">ACCIONES</th>
                     </tr>
@@ -292,6 +293,9 @@
                     },
                     {
                         data: 'poblacion'
+                    },
+                    {
+                        data: 'strobservaciones'
                     },
                     {
                         data: 'strobservacionesAbogado'

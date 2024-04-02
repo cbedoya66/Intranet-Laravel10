@@ -3,11 +3,13 @@
 use App\Http\Controllers\AbogadoController;
 use App\Http\Controllers\AsignarController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ControllerFestivos;
 use App\Http\Controllers\EncuestaController;
 use App\Http\Controllers\EnviadosController;
 use App\Http\Controllers\PermisionController;
 use App\Http\Controllers\RecibidosController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\TablaController;
 use App\Http\Controllers\TramiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +27,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
 
 Route::middleware([
     'auth:sanctum',
@@ -73,4 +77,6 @@ Route::middleware([
     Route::post('/enviado/reporte/', [EnviadosController::class, 'reporte']);
     Route::post('/enviado/reporteAbogado/', [EnviadosController::class, 'reporteAbogado']);
     Route::post('/enviado/codBarras/', [EnviadosController::class, 'codBarras']);
+
+    Route::resource('/festivos', ControllerFestivos::class)->names('festivos');
 });

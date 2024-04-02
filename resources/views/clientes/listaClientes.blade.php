@@ -161,6 +161,7 @@
                             </x-adminlte-select2>
 
                         </div>
+
                         <div class="col-6">
                             <x-adminlte-select2 name="strprofesional" id="strprofesional" label="Profesional"
                                 label-class="text-lightblue" igroup-size="lg"

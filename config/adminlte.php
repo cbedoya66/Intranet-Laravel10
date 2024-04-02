@@ -326,19 +326,19 @@ return [
         [
             'text'        => 'Usuarios del Sistema',
             'route'         => 'asignar.index',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-users',
             'can' => 'Administrador Configuracion',
         ],
         [
             'text'        => 'Roles',
             'route'         => 'roles.index',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-fw fa-file',
             'can' => 'Administrador Configuracion',
         ],
         [
             'text'        => 'Permisos',
             'route'         => 'permisos.index',
-            'icon'        => 'far fa-fw fa-file',
+            'icon'        => 'fas fa-thumbs-up',
             'can' => 'Administrador Configuracion',
         ],
         [
@@ -407,7 +407,16 @@ return [
             'icon' => 'fas fa-share-square',
             'can' => 'ModuloGestionDoc'
         ],
-
+        [
+            'header' => 'FESTIVOS',
+            'can' => 'Administrador Configuracion'
+        ],
+        [
+            'text' => 'Lista de Festivos',
+            'route'  => 'festivos.index',
+            'icon' => 'fas fa-calendar',
+            'can' => 'Administrador Configuracion'
+        ],
         /* [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',

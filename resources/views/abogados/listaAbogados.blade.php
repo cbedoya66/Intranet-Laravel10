@@ -212,8 +212,8 @@
                         <th class="bg-dark">TRAMITE</th>
                         <th class="bg-dark">NACIONALIDAD</th>
                         <th class="bg-dark">POBLACIÓN</th>
-                        <th class="bg-dark">DIRECTRIZ FILTRO</th>
                         <th class="bg-dark">OBSERVACIONES ABOGADO</th>
+                        <th class="bg-dark">DIRECTRIZ FILTRO</th>
                         <th class="bg-dark">CORREO</th>
                         <th class="bg-dark">ACCIONES</th>
                     </tr>
@@ -300,10 +300,10 @@
                         data: 'poblacion'
                     },
                     {
-                        data: 'strobservacionesAbogado'
+                        data: 'strobservaciones'
                     },
                     {
-                        data: 'strobservaciones'
+                        data: 'strobservacionesAbogado'
                     },
                     {
                         data: 'email'

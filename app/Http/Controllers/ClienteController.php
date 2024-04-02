@@ -132,7 +132,7 @@ class ClienteController extends Controller
      */
     public function destroy(string $id)
     {
-        return $id;
+
         $cliente = Client::find($id);
 
         $cliente->delete();
