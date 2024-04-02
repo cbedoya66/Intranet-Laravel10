@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'IntranetPersoneria')
 
 @section('content_header')
     <h1>Listado de Trámites</h1>
