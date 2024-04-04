@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                         <x-adminlte-select2 name="strpeticion" label="Petición" label-class="text-lightblue"
                             igroup-size="lg">
                             <x-slot name="prependSlot">
@@ -109,7 +109,21 @@
                         </x-adminlte-select2>
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
+                        <x-adminlte-select2 name="strAsistencia" label="Asistencia" label-class="text-lightblue"
+                            igroup-size="lg">
+                            <x-slot name="prependSlot">
+                                <div class="input-group-text ">
+                                    <i class="fa fa-file text-lightblue"></i>
+                                </div>
+                            </x-slot>
+                            <option value="NO">SELECCIONA LA ASISTENCIA...</option>
+                            <option value="ASISTENCIAL">ASISTENCIAL</option>
+                            <option value="VIRTUAL">VIRTUAL</option>
+
+                        </x-adminlte-select2>
+                    </div>
+                    <div class="col-5">
                         <x-adminlte-select2 name="strprofesional" label="Profesional" label-class="text-lightblue"
                             igroup-size="lg">
                             <x-slot name="prependSlot">
@@ -124,6 +138,8 @@
                         </x-adminlte-select2>
 
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-3">
                         <x-adminlte-input name="entidad" type="text" label="Entidad" label-class="text-lightblue"
                             value="{{ $tramites->entidad }}">
@@ -135,7 +151,7 @@
                         </x-adminlte-input>
 
                     </div>
-                    <div class="col-2">
+                    <div class="col-1">
                         <x-adminlte-input name="edad" type="text" label="Edad" label-class="text-lightblue"
                             value="{{ $tramites->edad }}">
                             <x-slot name="prependSlot">
@@ -146,37 +162,7 @@
                         </x-adminlte-input>
 
                     </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-6">
-                        <x-adminlte-textarea name="strobservacionesAbogado" label="Directriz Filtro" rows=5
-                            label-class="text-lightblue" igroup-size="sm" placeholder="Observaciones...">
-                            <x-slot name="prependSlot">
-                                <div class="input-group-text bg-dark">
-                                    <i class="fas fa-lg fa-file-alt text-lightblue"></i>
-                                </div>
-                            </x-slot>
-                            {{ $tramites->strobservacionesAbogado }}
-                        </x-adminlte-textarea>
-
-                    </div>
-                    <div class="col-6">
-                        <x-adminlte-textarea name="strobservaciones" label="Observaciones Abogado" rows=5
-                            label-class="text-lightblue" igroup-size="sm" placeholder="Observaciones...">
-                            <x-slot name="prependSlot">
-                                <div class="input-group-text bg-dark">
-                                    <i class="fas fa-lg fa-file-alt text-lightblue"></i>
-                                </div>
-                            </x-slot>
-                            {{ $tramites->strobservaciones }}
-                        </x-adminlte-textarea>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                         <x-adminlte-input name="email" type="email" label="Email" label-class="text-lightblue"
                             value="{{ $tramites->email }}">
                             <x-slot name="prependSlot">
@@ -186,7 +172,7 @@
                             </x-slot>
                         </x-adminlte-input>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
                         <x-adminlte-select2 name="poblacion" label="Población" label-class="text-lightblue"
                             igroup-size="lg">
                             <x-slot name="prependSlot">
@@ -200,6 +186,37 @@
                             @endforeach
                         </x-adminlte-select2>
                     </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-6">
+                        <x-adminlte-textarea name="strobservacionesAbogado" label="Directriz Filtro" rows=5
+                            label-class="text-lightblue" igroup-size="sm" placeholder="Observaciones..." readonly>
+                            <x-slot name="prependSlot">
+                                <div class="input-group-text bg-dark">
+                                    <i class="fas fa-lg fa-file-alt text-lightblue"></i>
+                                </div>
+                            </x-slot>
+                            {{ $tramites->strobservacionesAbogado }}
+                        </x-adminlte-textarea>
+
+                    </div>
+                    <div class="col-6">
+                        <x-adminlte-textarea name="strobservaciones" label="Observaciones Abogado" rows=5
+                            label-class="text-lightblue" igroup-size="sm" placeholder="Observaciones..."
+                            value="{{ old('strobservaciones') }}">
+                            <x-slot name="prependSlot">
+                                <div class="input-group-text bg-dark">
+                                    <i class="fas fa-lg fa-file-alt text-lightblue"></i>
+                                </div>
+                            </x-slot>
+                            {{ $tramites->strobservaciones }}
+                        </x-adminlte-textarea>
+
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-6">
 
                         <x-adminlte-input accept="application/pdf" name="strArchivo" type="file" label="Archivo"
@@ -236,11 +253,19 @@
         <script>
             $(document).ready(function() {
                 let mensaje = "{{ session('message') }}";
-                Swal.fire({
+                /* Swal.fire({
                     title: "Resultado",
                     text: mensaje,
                     icon: "success"
+                }); */
+
+                Swal.fire({
+                    icon: "question",
+                    title: "Oops...",
+                    text: mensaje,
                 });
+
+
             })
         </script>
     @endif

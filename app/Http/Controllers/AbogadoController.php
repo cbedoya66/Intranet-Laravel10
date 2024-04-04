@@ -87,6 +87,7 @@ class AbogadoController extends Controller
         $tramite->strtelefono = $request->input('strtelefono');
         $tramite->strnacionalidad = $request->input('strnacionalidad');
         $tramite->strpeticion = $request->input('strpeticion');
+        $tramite->tAtencion = $request->input('strpeticion') . " - " . $request->input('strAsistencia');
         $tramite->strprofesional = $request->input('strprofesional');
         $tramite->entidad = $request->input('entidad');
         $tramite->edad = $request->input('edad');
