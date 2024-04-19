@@ -417,6 +417,28 @@ return [
             'icon' => 'fas fa-calendar',
             'can' => 'Administrador Configuracion'
         ],
+        [
+            'header' => 'CARGAR IMAGENES',
+            'can' => 'Administrador Configuracion'
+        ],
+        [
+            'text' => 'Imagen Principal',
+            'route'  => 'imgPpal.index',
+            'icon' => 'fas fa-male',
+            'can' => 'Administrador Configuracion'
+        ],
+        [
+            'text' => 'Imagen Info',
+            'route'  => 'imgInfo.index',
+            'icon' => 'fas fa-male',
+            'can' => 'Administrador Configuracion'
+        ],
+        [
+            'text' => 'Imagen Panel',
+            'route'  => 'imgPanel.index',
+            'icon' => 'fas fa-male',
+            'can' => 'Administrador Configuracion'
+        ],
         /* [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
@@ -544,12 +566,12 @@ return [
             ],
         ],
         'Chartjs' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
                     'asset' => false,
-                    'location' => '//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js',
+                    'location' => '//cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js',
                 ],
             ],
         ],

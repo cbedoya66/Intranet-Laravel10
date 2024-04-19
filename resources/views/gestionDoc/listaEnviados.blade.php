@@ -497,6 +497,7 @@
             });
         })
 
+
         $(document).ready(function() {
             let table = $('#table6').DataTable({
                 processing: true,
@@ -522,10 +523,13 @@
                         data: 'Encargado'
                     },
                     {
-                        data: 'nroRadDocR'
+                        data: 'abogado'
                     },
                     {
                         data: 'asunto'
+                    },
+                    {
+                        data: 'nroRadDocR'
                     },
                     {
                         data: 'rRespuesta'

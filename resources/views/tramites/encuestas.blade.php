@@ -285,6 +285,61 @@
           </div>
       </div>
 
+      <div class="card">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-3">
+                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                          <canvas id="encuesta">
+
+
+
+                      </x-adminlte-card>
+                  </div>
+                  <div class="col-3">
+                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                          <canvas id="encuesta2">
+
+
+                          </canvas>
+                          {{ $atencionExcelente }}
+                          {{ $atencionBueno }}
+                          {{ $atencionRegular }}
+                          {{ $atencionMalo }}
+
+                      </x-adminlte-card>
+                  </div>
+                  <div class="col-3">
+                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                          <canvas id="encuesta3">
+
+
+                          </canvas>
+                          {{ $atencionExcelente }}
+                          {{ $atencionBueno }}
+                          {{ $atencionRegular }}
+                          {{ $atencionMalo }}
+
+                      </x-adminlte-card>
+                  </div>
+                  <div class="col-3">
+                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                          <canvas id="encuesta4">
+
+
+                          </canvas>
+                          {{ $atencionExcelente }}
+                          {{ $atencionBueno }}
+                          {{ $atencionRegular }}
+                          {{ $atencionMalo }}
+
+                      </x-adminlte-card>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
 
   @stop
 
@@ -294,17 +349,34 @@
 
   @section('js')
 
-      @if (session('message'))
-          <script>
-              $(document).ready(function() {
-                  let mensaje = "{{ session('message') }}";
-                  Swal.fire({
-                      title: "Resultado",
-                      text: mensaje,
-                      icon: "success"
-                  });
-              })
-          </script>
-      @endif
+      <script>
+          const ctx = document.querySelector('#encuesta').getContext('2d');
+          const label1 = {!! json_encode($atencionExcelente->pluck('atencion')) !!};
+          const label2 = {!! json_encode($atencionBueno->pluck('atencion')) !!}
+
+          const stackedBar = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                  labels: [label1, label2],
+                  datasets: [{
+                      label: 'Atención a los Usuarios',
+                      data: {!! json_encode($atencionExcelente->pluck('total')) !!},
+                      backgroundColor: 'rgba(75,192,192,0.2)',
+                      borderColor: 'rgba(75,192,192,0.1)',
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      x: {
+                          stacked: true
+                      },
+                      y: {
+                          stacked: true
+                      }
+                  }
+              }
+          });
+      </script>
 
   @stop

@@ -6,23 +6,15 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ControllerFestivos;
 use App\Http\Controllers\EncuestaController;
 use App\Http\Controllers\EnviadosController;
+use App\Http\Controllers\ImgInfoController;
+use App\Http\Controllers\ImgPanelController;
+use App\Http\Controllers\ImgPpalController;
 use App\Http\Controllers\PermisionController;
 use App\Http\Controllers\RecibidosController;
 use App\Http\Controllers\RoleController;
-use App\Http\Controllers\TablaController;
 use App\Http\Controllers\TramiteController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -48,6 +40,7 @@ Route::middleware([
 
     //Encuestas
     Route::resource('/encuestas', EncuestaController::class)->names('encuestas');
+    Route::post('/encuestas/reporteE', [EncuestaController::class,'reporteE']);
 
     //usuarios Roles y permisos
     Route::resource('/roles', RoleController::class)->names('roles');
@@ -78,5 +71,11 @@ Route::middleware([
     Route::post('/enviado/reporteAbogado/', [EnviadosController::class, 'reporteAbogado']);
     Route::post('/enviado/codBarras/', [EnviadosController::class, 'codBarras']);
 
+    //Festivos
     Route::resource('/festivos', ControllerFestivos::class)->names('festivos');
+
+    //Cargar imagenes
+    Route::resource('/imgInfo', ImgInfoController::class)->names('imgInfo');
+    Route::resource('/imgPpal', ImgPpalController::class)->names('imgPpal');
+    Route::resource('/imgPanel', ImgPanelController::class)->names('imgPanel');
 });

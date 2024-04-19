@@ -55,7 +55,7 @@ class RecibidosController extends Controller
         $radicado->dependencia = $request->input('dependencia');
         $radicado->encargado = $request->input('encargado');
         $radicado->asunto = $request->input('asunto');
-        $radicado->abogado = $request->input('abogado');
+        $radicado->abogado = $request->input('strprofesional');
         $radicado->anexo = $request->input('anexo');
         if ($request->input('respuesta') == 1) {
             $radicado->rRespuesta = 'NO';

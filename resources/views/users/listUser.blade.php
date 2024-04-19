@@ -23,7 +23,13 @@
 
         <div class="card-body">
             @php
-                $heads = ['ID', 'NOMBRE', 'EMAIL', ['label' => 'Actions', 'no-export' => true, 'width' => 10]];
+                $heads = [
+                    'ID',
+                    'AVATAR',
+                    'NOMBRE',
+                    'EMAIL',
+                    ['label' => 'Actions', 'no-export' => true, 'width' => 10],
+                ];
 
                 $btnEdit = '';
                 $btnDelete = '<button type="submit" class="btn btn-xs btn-default text-danger mx-1 shadow" title="Delete">
@@ -47,6 +53,8 @@
                 @foreach ($users as $user)
                     <tr>
                         <td> {{ $user->id }} </td>
+                        <td> <img style="width: 50px;height:50px" src="/storage/{{ $user->profile_photo_path }}"
+                                alt=""> </td>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
                         <td><a href="{{ route('asignar.edit', $user) }}  " type="submit"
