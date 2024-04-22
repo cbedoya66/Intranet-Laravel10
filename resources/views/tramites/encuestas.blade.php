@@ -39,33 +39,15 @@
                                                   solicitud?</h6>
                                           </td>
                                           <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="atencionExcelente" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Excelente">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Excelente</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="atencionBueno" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Bueno">
-                                                  <label class="form-check-label" for="flexSwitchCheckChecked">Bueno</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="atencionRegular" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Regular">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Regular</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="atencionMalo" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Malo">
-                                                  <label class="form-check-label" for="flexSwitchCheckChecked">Malo</label>
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text" id="basic-addon1">ATENCIÓN</span>
+                                                  <select name="atencion" class="form-control"
+                                                      id="exampleFormControlSelect1">
+                                                      <option value="EXCELENTE">EXCELENTE</option>
+                                                      <option value="BUENO">BUENO</option>
+                                                      <option value="REGULAR">REGULAR</option>
+                                                      <option value="MALO">MALO</option>
+                                                  </select>
                                               </div>
                                           </td>
                                       </tr>
@@ -76,33 +58,15 @@
                                                   los funcionarios de la Personería?</h6>
                                           </td>
                                           <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="asesoriaExcelente" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Excelente">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Excelente</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="asesoriaBueno" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Bueno">
-                                                  <label class="form-check-label" for="flexSwitchCheckChecked">Bueno</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="asesoriaRegular" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Regular">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Regular</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="asesoriaMalo" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Malo">
-                                                  <label class="form-check-label" for="flexSwitchCheckChecked">Malo</label>
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text" id="basic-addon1">ASESORÍA</span>
+                                                  <select name="asesoria" class="form-control"
+                                                      id="exampleFormControlSelect1">
+                                                      <option value="EXCELENTE">EXCELENTE</option>
+                                                      <option value="BUENO">BUENO</option>
+                                                      <option value="REGULAR">REGULAR</option>
+                                                      <option value="MALO">MALO</option>
+                                                  </select>
                                               </div>
                                           </td>
                                       </tr>
@@ -111,35 +75,15 @@
                                               <h6>¿Cómo califica usted el tiempo esperado para ser atendido?</h6>
                                           </td>
                                           <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="tiempoExcelente" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Excelente">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Excelente</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="tiempoBueno" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Bueno">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Bueno</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="tiempoRegular" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Regular">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Regular</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="tiempoMalo" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Malo">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Malo</label>
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text" id="basic-addon1">TIEMPO</span>
+                                                  <select name="tiempo" class="form-control"
+                                                      id="exampleFormControlSelect1">
+                                                      <option value="EXCELENTE">EXCELENTE</option>
+                                                      <option value="BUENO">BUENO</option>
+                                                      <option value="REGULAR">REGULAR</option>
+                                                      <option value="MALO">MALO</option>
+                                                  </select>
                                               </div>
                                           </td>
                                       </tr>
@@ -150,36 +94,15 @@
                                                   prestación del servicio?</h6>
                                           </td>
                                           <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="espaciosExcelente" class="form-check-input"
-                                                      type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                                      value="Excelente">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Excelente</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="espaciosBueno" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Bueno">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Bueno</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="espaciosRegular" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Regular">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Regular</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="espaciosMalo" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Malo">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Malo</label>
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text" id="basic-addon1">ESPACIO</span>
+                                                  <select name="espacios" class="form-control"
+                                                      id="exampleFormControlSelect1">
+                                                      <option value="EXCELENTE">EXCELENTE</option>
+                                                      <option value="BUENO">BUENO</option>
+                                                      <option value="REGULAR">REGULAR</option>
+                                                      <option value="MALO">MALO</option>
+                                                  </select>
                                               </div>
                                           </td>
                                       </tr>
@@ -189,38 +112,15 @@
                                                   Municipal de Sabaneta?</h6>
                                           </td>
                                           <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="satisfaccionExcelente" class="form-check-input"
-                                                      type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                                      value="Excelente">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Excelente</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="satisfaccionBueno" class="form-check-input"
-                                                      type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                                      value="Bueno">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Bueno</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="satisfaccionRegular" class="form-check-input"
-                                                      type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                                                      value="Regular">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Regular</label>
-                                              </div>
-                                          </td>
-                                          <td>
-                                              <div class="form-check form-switch">
-                                                  <input name="satisfaccionMalo" class="form-check-input" type="checkbox"
-                                                      role="switch" id="flexSwitchCheckChecked" value="Malo">
-                                                  <label class="form-check-label"
-                                                      for="flexSwitchCheckChecked">Malo</label>
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text" id="basic-addon1">SATISFACCIÓN</span>
+                                                  <select name="satisfaccion" class="form-control"
+                                                      id="exampleFormControlSelect1">
+                                                      <option value="EXCELENTE">EXCELENTE</option>
+                                                      <option value="BUENO">BUENO</option>
+                                                      <option value="REGULAR">REGULAR</option>
+                                                      <option value="MALO">MALO</option>
+                                                  </select>
                                               </div>
                                           </td>
                                       </tr>
@@ -244,8 +144,7 @@
                           <div class="input-group   mb-3">
                               <span class="input-group-text" id="basic-addon1">Cédula</span>
                               <input name="cedula" type="text" class="form-control" placeholder="Cédula"
-                                  aria-label="Cédula" aria-describedby="basic-addon1"
-                                  value="{{ $encuesta->intcedula }} ">
+                                  aria-label="Cédula" aria-describedby="basic-addon1" value="{{ $encuesta->intcedula }} ">
                           </div>
                           <div class="input-group mb-3">
                               <span class="input-group-text" id="basic-addon1">Nombre Usuario</span>
@@ -285,61 +184,45 @@
           </div>
       </div>
 
-      <div class="card">
+      {{-- <div class="card">
           <div class="card-body">
               <div class="row">
                   <div class="col-3">
-                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                      <x-adminlte-card title="Atención" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
                           <canvas id="encuesta">
-
-
-
                       </x-adminlte-card>
                   </div>
+
                   <div class="col-3">
-                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                      <x-adminlte-card title="Asesoría" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
                           <canvas id="encuesta2">
-
-
                           </canvas>
-                          {{ $atencionExcelente }}
-                          {{ $atencionBueno }}
-                          {{ $atencionRegular }}
-                          {{ $atencionMalo }}
-
                       </x-adminlte-card>
                   </div>
-                  <div class="col-3">
-                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                  <div class="col-2">
+                      <x-adminlte-card title="Tiempo" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
                           <canvas id="encuesta3">
-
-
                           </canvas>
-                          {{ $atencionExcelente }}
-                          {{ $atencionBueno }}
-                          {{ $atencionRegular }}
-                          {{ $atencionMalo }}
-
                       </x-adminlte-card>
                   </div>
-                  <div class="col-3">
-                      <x-adminlte-card title="Purple Card" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
+                  <div class="col-2">
+                      <x-adminlte-card title="Espacios" theme="success" icon="fas fa-lg fa-fan" removable collapsible>
                           <canvas id="encuesta4">
-
-
                           </canvas>
-                          {{ $atencionExcelente }}
-                          {{ $atencionBueno }}
-                          {{ $atencionRegular }}
-                          {{ $atencionMalo }}
-
+                      </x-adminlte-card>
+                  </div>
+                  <div class="col-2">
+                      <x-adminlte-card title="Satisfacción" theme="success" icon="fas fa-lg fa-fan" removable
+                          collapsible>
+                          <canvas id="encuesta5">
+                          </canvas>
                       </x-adminlte-card>
                   </div>
               </div>
 
           </div>
       </div>
-
+ --}}
 
   @stop
 
@@ -349,18 +232,16 @@
 
   @section('js')
 
-      <script>
+      {{--   <script>
           const ctx = document.querySelector('#encuesta').getContext('2d');
-          const label1 = {!! json_encode($atencionExcelente->pluck('atencion')) !!};
-          const label2 = {!! json_encode($atencionBueno->pluck('atencion')) !!}
-
+          const labels = {!! json_encode($atencion->pluck('atencion')) !!};
           const stackedBar = new Chart(ctx, {
               type: 'bar',
               data: {
-                  labels: [label1, label2],
+                  labels: labels,
                   datasets: [{
                       label: 'Atención a los Usuarios',
-                      data: {!! json_encode($atencionExcelente->pluck('total')) !!},
+                      data: {!! json_encode($atencion->pluck('total')) !!},
                       backgroundColor: 'rgba(75,192,192,0.2)',
                       borderColor: 'rgba(75,192,192,0.1)',
                       borderWidth: 1
@@ -377,6 +258,109 @@
                   }
               }
           });
-      </script>
 
+          const ctx2 = document.querySelector('#encuesta2').getContext('2d');
+          const labels2 = {!! json_encode($asesoria->pluck('asesoria')) !!};
+          const stackedBar = new Chart(ctx2, {
+              type: 'bar',
+              data: {
+                  labels: labels2,
+                  datasets: [{
+                      label: 'Asesoría a los Usuarios',
+                      data: {!! json_encode($asesoria->pluck('total')) !!},
+                      backgroundColor: 'rgba(75,192,192,0.2)',
+                      borderColor: 'rgba(75,192,192,0.1)',
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      x: {
+                          stacked: true
+                      },
+                      y: {
+                          stacked: true
+                      }
+                  }
+              }
+          });
+
+          const ctx3 = document.querySelector('#encuesta3').getContext('2d');
+          const labels3 = {!! json_encode($tiempo->pluck('tiempo')) !!};
+          const stackedBar = new Chart(ctx3, {
+              type: 'bar',
+              data: {
+                  labels: labels3,
+                  datasets: [{
+                      label: 'Tiempo a los Usuarios',
+                      data: {!! json_encode($tiempo->pluck('total')) !!},
+                      backgroundColor: 'rgba(75,192,192,0.2)',
+                      borderColor: 'rgba(75,192,192,0.1)',
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      x: {
+                          stacked: true
+                      },
+                      y: {
+                          stacked: true
+                      }
+                  }
+              }
+          });
+
+          const ctx4 = document.querySelector('#encuesta4').getContext('2d');
+          const labels4 = {!! json_encode($espacios->pluck('espacios')) !!};
+          const stackedBar = new Chart(ctx4, {
+              type: 'bar',
+              data: {
+                  labels: labels4,
+                  datasets: [{
+                      label: 'Espacios Físicos',
+                      data: {!! json_encode($espacios->pluck('total')) !!},
+                      backgroundColor: 'rgba(75,192,192,0.2)',
+                      borderColor: 'rgba(75,192,192,0.1)',
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      x: {
+                          stacked: true
+                      },
+                      y: {
+                          stacked: true
+                      }
+                  }
+              }
+          });
+
+          const ctx5 = document.querySelector('#encuesta5').getContext('2d');
+          const labels5 = {!! json_encode($satisfaccion->pluck('satisfaccion')) !!};
+          const stackedBar = new Chart(ctx5, {
+              type: 'bar',
+              data: {
+                  labels: labels5,
+                  datasets: [{
+                      label: 'Satisfacción Usuarios',
+                      data: {!! json_encode($satisfaccion->pluck('total')) !!},
+                      backgroundColor: 'rgba(75,192,192,0.2)',
+                      borderColor: 'rgba(75,192,192,0.1)',
+                      borderWidth: 1
+                  }]
+              },
+              options: {
+                  scales: {
+                      x: {
+                          stacked: true
+                      },
+                      y: {
+                          stacked: true
+                      }
+                  }
+              }
+          });
+      </script> --}}
   @stop
