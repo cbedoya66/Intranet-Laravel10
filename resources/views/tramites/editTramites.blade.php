@@ -63,7 +63,8 @@
                                     <i class="fa fa-map-marker text-lightblue"></i>
                                 </div>
                             </x-slot>
-                        </x-adminlte-input></div>
+                        </x-adminlte-input>
+                    </div>
                     <div class="col-2"><x-adminlte-input name="strtelefono" type="text" label="Teléfono"
                             label-class="text-lightblue" value="{{ $tramites->strtelefono }}">
                             <x-slot name="prependSlot">
@@ -71,7 +72,8 @@
                                     <i class="fa fa-phone text-lightblue"></i>
                                 </div>
                             </x-slot>
-                        </x-adminlte-input></div>
+                        </x-adminlte-input>
+                    </div>
                     <div class="col-3"><x-adminlte-select2 name="strnacionalidad" label="Nacionalidad"
                             label-class="text-lightblue" igroup-size="lg">
                             <x-slot name="prependSlot">
@@ -83,7 +85,8 @@
                             <option>-Sin Nacionalidad</option>
                             <option>Colombiano</option>
                             <option>Venezolano</option>
-                        </x-adminlte-select2></div>
+                        </x-adminlte-select2>
+                    </div>
                 </div>
 
                 <div class="row">

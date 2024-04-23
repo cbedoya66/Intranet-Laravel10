@@ -210,8 +210,8 @@ return [
     |
     */
 
-    'sidebar_mini' => 'lg',
-    'sidebar_collapse' => false,
+    'sidebar_mini' => false, //para que el menu del panel no se muestre al pasarle el mouse por encima
+    'sidebar_collapse' => false, //oculta el menu del panel al ingresar al sistema
     'sidebar_collapse_auto_size' => false,
     'sidebar_collapse_remember' => false,
     'sidebar_collapse_remember_no_transition' => true,
@@ -253,7 +253,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'http://192.168.1.10:8000/',
+    'dashboard_url' => 'dashboard',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -320,25 +320,28 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'header' => 'USUARIOS',
-            'can' => 'Administrador Configuracion'
+            'header' => 'CONFIGURAR PERMISOS',
+            'can' => 'Administrador Configuracion',
         ],
         [
             'text'        => 'Usuarios del Sistema',
             'route'         => 'asignar.index',
             'icon'        => 'fas fa-users',
+            'icon_color' => 'success',
             'can' => 'Administrador Configuracion',
         ],
         [
             'text'        => 'Roles',
             'route'         => 'roles.index',
             'icon'        => 'fas fa-fw fa-file',
+            'icon_color' => 'success',
             'can' => 'Administrador Configuracion',
         ],
         [
             'text'        => 'Permisos',
             'route'         => 'permisos.index',
             'icon'        => 'fas fa-thumbs-up',
+            'icon_color' => 'success',
             'can' => 'Administrador Configuracion',
         ],
         [
@@ -357,6 +360,7 @@ return [
             'text' => 'Lista de Usuarios',
             'route'  => 'clientes.index',
             'icon' => 'fas fa-fw fa-user',
+            'icon_color' => 'success',
             'can' => 'ModuloClientes'
         ],
         [
@@ -371,6 +375,7 @@ return [
             'text' => 'Lista de Trámites',
             'route'  => 'tramite.index',
             'icon' => 'fa fa-list-alt',
+            'icon_color' => 'success',
             'can' => 'ModuloClientes'
         ],
         [
@@ -385,6 +390,7 @@ return [
             'text' => 'Lista de Trámites Abogado',
             'route'  => 'abogado.index',
             'icon' => 'fas fa-graduation-cap',
+            'icon_color' => 'success',
             'can' => 'ModuloAbogados'
         ],
         [
@@ -399,12 +405,14 @@ return [
             'text' => 'Lista de Radicados Recibidos',
             'route'  => 'recibido.index',
             'icon' => 'fas fa-reply-all',
+            'icon_color' => 'success',
             'can' => 'ModuloGestionDoc'
         ],
         [
             'text' => 'Lista de Radicados Enviados',
             'route'  => 'enviado.index',
             'icon' => 'fas fa-share-square',
+            'icon_color' => 'success',
             'can' => 'ModuloGestionDoc'
         ],
         [
@@ -415,6 +423,7 @@ return [
             'text' => 'Lista de Festivos',
             'route'  => 'festivos.index',
             'icon' => 'fas fa-calendar',
+            'icon_color' => 'success',
             'can' => 'Administrador Configuracion'
         ],
         [
@@ -425,18 +434,21 @@ return [
             'text' => 'Imagen Principal',
             'route'  => 'imgPpal.index',
             'icon' => 'fas fa-male',
+            'icon_color' => 'success',
             'can' => 'Administrador Configuracion'
         ],
         [
             'text' => 'Imagen Info',
             'route'  => 'imgInfo.index',
             'icon' => 'fas fa-male',
+            'icon_color' => 'success',
             'can' => 'Administrador Configuracion'
         ],
         [
             'text' => 'Imagen Panel',
             'route'  => 'imgPanel.index',
             'icon' => 'fas fa-male',
+            'icon_color' => 'success',
             'can' => 'Administrador Configuracion'
         ],
         /* [

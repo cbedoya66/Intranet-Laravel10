@@ -503,6 +503,8 @@
                 processing: true,
                 serverSide: true,
                 responsive: true,
+                orderCellsTop: true,
+                fixedHeader: true,
                 "ordering": true,
                 "order": [
                     [1, 'desc']
@@ -541,9 +543,6 @@
                         data: 'fecRespuesta'
                     },
                     {
-                        data: 'abogado'
-                    },
-                    {
                         data: 'strArchivo'
                     },
                     {
@@ -578,6 +577,8 @@
                         '<option value="600">600</option>' +
                         '<option value="800">800</option>' +
                         '<option value="1000">1000</option>' +
+                        '<option value="2000">2000</option>' +
+                        '<option value="5000">5000</option>' +
                         '</select> registros____    ',
                     "loadingRecords": "Cargando registros.....",
                     "processing": "Procesando.....",
@@ -586,6 +587,7 @@
                     "infoEmpty": "Mostrando 0 a 0 de 0 Trámites",
                     "infoFiltered": "(Filtrado de _MAX_ _total_ Trámites)",
                 }
+
             });
 
             //Eventos criterios de busquedad
@@ -601,6 +603,10 @@
             $('#iptasunto').keyup(function() {
                 table.columns($(this).data('index')).search(this.value).draw();
             })
+
+
+
+
         });
     </script>
 
