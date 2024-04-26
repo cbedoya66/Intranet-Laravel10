@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AbogadoController;
 use App\Http\Controllers\AsignarController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ControllerFestivos;
 use App\Http\Controllers\EncuestaController;
@@ -40,7 +41,7 @@ Route::middleware([
 
     //Encuestas
     Route::resource('/encuestas', EncuestaController::class)->names('encuestas');
-    Route::post('/encuestas/reporteE', [EncuestaController::class,'reporteE']);
+    Route::post('/encuestas/reporteE', [EncuestaController::class, 'reporteE']);
 
     //usuarios Roles y permisos
     Route::resource('/roles', RoleController::class)->names('roles');

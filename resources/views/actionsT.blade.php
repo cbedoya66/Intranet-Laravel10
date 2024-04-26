@@ -15,7 +15,7 @@
         </form>
     </div>
     <div class="col-4"><a href="{{ route('encuestas.show', $id) }}"
-            class="btn btn-xs btn-default text-success mx-1 shadow" title="Documento" >
+            class="btn btn-xs btn-default text-success mx-1 shadow" title="Documento">
             <i class="fa fa-lg fa-fw fa-pen"></i> Encuesta
         </a>
     </div>

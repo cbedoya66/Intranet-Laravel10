@@ -1,19 +1,12 @@
+//contrasela de aplicacion
+ebzbldanfadkyyuc
 
-
-
- <table id="table6" class="table">
-                <thead>
-                    <tr>
-                        <th class="bg-dark">ID</th>
-                        <th class="bg-dark">FECHA</th>
-                        <th class="bg-dark">CEDULA</th>
-                        <th class="bg-dark">NOMBRES</th>
-                        <th class="bg-dark">ABOGADO</th>
-                        <th class="bg-dark">TRAMITE</th>
-                        <th class="bg-dark">OBSERVACIONES</th>
-                        <th class="bg-dark">CORREO</th>
-                        <th class="bg-dark">ACTIVO</th>
-                        <th class="bg-dark">&nbsp;</th>
-                    </tr>
-                </thead>
-            </table>
+//Mailtrap
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=3b69a85a31d0a1
+MAIL_PASSWORD=1630a039454d3b
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="admin@personeriasabaneta.com"
+MAIL_FROM_NAME="${APP_NAME}"

@@ -12,7 +12,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4>Reporte Consolidado de Trámites por Usuario</h4>
-                    <form action="{{ url('tramite/reporteU') }}" method="post" id="form-eliminar">
+                    <form action="{{ url('tramite/reporteU') }}" method="post" id="">
                         @csrf
                         <div class="row">
                             <div class="col-6"><x-adminlte-input name="fechaInicial" type="date" label="fecha"
@@ -47,7 +47,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4>Reporte Consolidado por Población</h4>
-                    <form action="{{ url('tramite/reporteP') }}" method="post" id="form-eliminar">
+                    <form action="{{ url('tramite/reporteP') }}" method="post" id="">
                         @csrf
                         <div class="row">
                             <div class="col-6"><x-adminlte-input name="fechaInicial" type="date" label="fecha"
@@ -82,7 +82,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4>Reporte Consolidado Encuestas</h4>
-                    <form action="{{ url('tramite/reporteE') }}" method="post" id="form-eliminar">
+                    <form action="{{ url('tramite/reporteE') }}" method="post" id="">
                         @csrf
                         <div class="row">
                             <div class="col-6"><x-adminlte-input name="fechaInicial" type="date" label="fecha"
@@ -239,24 +239,24 @@
 
 
     <script>
-        $('#formEliminar').on('click', function(e) {
-            console.log('hola');
-            alert('entre aqui');
-            e.preventDefault();
-            Swal.fire({
-                title: "Esta seguro?",
-                text: "Vas a eliminar un registro!",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Yes, delete it!"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    this.submit();
-                }
-            });
-        })
+        /* $('#formEliminar').on('click', function(e) {
+                            console.log('hola');
+                            alert('entre aqui');
+                            e.preventDefault();
+                            Swal.fire({
+                                title: "Esta seguro?",
+                                text: "Vas a eliminar un registro!",
+                                icon: "warning",
+                                showCancelButton: true,
+                                confirmButtonColor: "#3085d6",
+                                cancelButtonColor: "#d33",
+                                confirmButtonText: "Yes, delete it!"
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    this.submit();
+                                }
+                            });
+                        }) */
 
         $(document).ready(function() {
 
