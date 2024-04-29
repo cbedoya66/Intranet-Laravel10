@@ -110,7 +110,7 @@
         <script src="{{ asset('vendor/adminlte/dist/js/pdfmake.min.js') }}"></script>
         <script src="{{ asset('vendor/adminlte/dist/js/vfs_fonts.js') }}"></script>
         <script src="{{ asset('vendor/adminlte/dist/js/datatables.min.js') }}"></script>
-        <script src="{{ asset('vendor/adminlte/dist/js/dataTables.fixedHeader.min.js') }}></script>
+        <script src="{{ asset('vendor/adminlte/dist/js/dataTables.fixedHeader.min.js') }}"></script>
         {{-- sweetalert2 --}}
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         {{-- JQUERY --}}
